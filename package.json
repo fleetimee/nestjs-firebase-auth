@@ -1,5 +1,5 @@
 {
-  "name": "@tfarras/nestjs-firebase-auth",
+  "name": "@bento-repos/nestjs-firebase-auth",
   "version": "2.0.0",
   "description": "NestJS Passport Strategy for Firebase Auth using Firebase Admin SDK",
   "author": "Taimoor Farras <farrastaimoor@gmail.com>",
@@ -47,11 +47,11 @@
   },
   "homepage": "https://github.com/tfarras/nestjs-firebase-auth#readme",
   "peerDependencies": {
-    "@nestjs/common": "^7.6.15",
+    "@nestjs/common": "^9.0.11",
     "@types/passport-jwt": "^3.0.5",
-    "firebase-admin": "^9.6.0",
-    "passport": "^0.4.1",
-    "passport-jwt": "^4.0.0"
+    "firebase-admin": "^11.0.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
   },
   "devDependencies": {
     "@nestjs/cli": "^7.6.0",

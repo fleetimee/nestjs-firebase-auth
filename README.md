@@ -32,7 +32,7 @@ npm install @nestjs/passport
 ## Install strategy
 
 ```bash
-npm install @tfarras/nestjs-firebase-auth
+npm install @bento-repos/nestjs-firebase-auth
 ```
 
 # Important
@@ -45,7 +45,7 @@ To work with Firebase Auth you need to configure and initialize your firebase ap
 import { Injectable } from "@nestjs/common";
 import { PassportStrategy } from "@nestjs/passport";
 import { ExtractJwt } from 'passport-jwt';
-import { FirebaseAuthStrategy } from '@tfarras/nestjs-firebase-auth';
+import { FirebaseAuthStrategy } from '@bento-repos/nestjs-firebase-auth';
 
 @Injectable()
 export class FirebaseStrategy extends PassportStrategy(FirebaseAuthStrategy, 'firebase') {
@@ -78,7 +78,7 @@ export class AuthModule { }
 # Import `AuthModule` into `AppModule`
 
 ```typescript
-import { FirebaseAdminCoreModule } from '@tfarras/nestjs-firebase-admin';
+import { FirebaseAdminCoreModule } from '@bento-repos/nestjs-firebase-admin';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from 'nestjs-config';
 import { AppController } from './app.controller';
@@ -107,7 +107,7 @@ export class AppModule { }
 ```typescript
 import { Controller, Get, Inject, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { FirebaseAdminSDK, FIREBASE_ADMIN_INJECT } from '@tfarras/nestjs-firebase-admin';
+import { FirebaseAdminSDK, FIREBASE_ADMIN_INJECT } from '@bento-repos/nestjs-firebase-admin';
 import { AppService } from './app.service';
 
 @Controller()
@@ -135,7 +135,7 @@ In cases when you want to validate also if user exists in your database, or anyt
 ```typescript
 import { Injectable } from "@nestjs/common";
 import { PassportStrategy } from "@nestjs/passport";
-import { FirebaseAuthStrategy, FirebaseUser } from '@tfarras/nestjs-firebase-auth';
+import { FirebaseAuthStrategy, FirebaseUser } from '@bento-repos/nestjs-firebase-auth';
 import { ExtractJwt } from 'passport-jwt';
 
 @Injectable()
