@@ -51,7 +51,7 @@
     "@types/passport-jwt": "^3.0.5",
     "firebase-admin": "^11.0.1",
     "passport": "^0.6.0",
-    "passport-jwt": "^4.0.0",
+    "passport-jwt": "^4.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.6.0",
