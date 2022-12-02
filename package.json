@@ -1,6 +1,5 @@
 {
-  "name": "@fleetime/nestjs-firebase-auth",
-  "version": "2.0.0",
+  "name": "fleetime/nestjs-firebase-auth",
   "description": "NestJS Passport Strategy for Firebase Auth using Firebase Admin SDK",
   "author": "Taimoor Farras <farrastaimoor@gmail.com>",
   "readmeFilename": "README.md",
